@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CCA-SCHED Home</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: url("https://github.com/user-attachments/assets/0b16f830-2d54-42e8-a16e-59770beed2c5") no-repeat center center/cover;
+      position: relative;
+    }
+
+    /* Dark green overlay */
+    body::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(73, 94, 53, 0.8); /* #495e35 with opacity */
+      z-index: 0;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      color: #fff;
+    }
+
+    .logo img {
+      max-width: 300px;
+      filter: drop-shadow(0 0 12px black);
+    }
+
+    .buttons {
+      margin-top: 30px;
+    }
+
+    .buttons a {
+      display: inline-block;
+      padding: 12px 25px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #fff;
+      background: #495e35;
+      border: 2px solid black;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    }
+
+    .buttons a:hover {
+      background: black;
+      color: #495e35;
+      border-color: #495e35;
+    }
+
+    .buttons a i {
+      margin-right: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img alt="CCA Logo" src="https://github.com/user-attachments/assets/6b929fa8-f31b-4102-b7be-1629d75be945" />
+    </div>
+    <div class="buttons">
+      <a href="live-sched.html"><i class="fa-solid fa-calendar-days"></i> I202 Live Sched View</a>
+    </div>
+  </div>
+</body>
+</html>
